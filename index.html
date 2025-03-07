@@ -49,9 +49,9 @@
       element. It works well for small datasets but is inefficient for large
       lists.
     </p>
-    <p class="complexity">
-      Time Complexity: O(n) (Worst & Average), O(1) (Best - if found at start)
-    </p>
+    <p class="complexity">Time Complexity:</p>
+    <p class="complexity">O(n) (Worst & Average)</p>
+    <p class="complexity">O(1) (Best - if found at start)</p>
     <pre><code class="language-python">
 def lin_search(lst, item):
     for index in range(len(lst)):
@@ -67,7 +67,8 @@ def lin_search(lst, item):
       Binary search is used on sorted lists. It repeatedly divides the list into
       halves and eliminates one half at each step.
     </p>
-    <p class="complexity">Time Complexity: O(log n) (Best, Average & Worst)</p>
+    <p class="complexity">Time Complexity:</p>
+    <p class="complexity">O(log n) (Best, Average & Worst)</p>
     <pre><code class="language-python">
 def bin_search(lst, item):
 ub = len(lst) - 1
@@ -92,9 +93,9 @@ print("Item not found")
       Insertion sort builds the sorted list one item at a time by inserting each
       element in its correct position.
     </p>
-    <p class="complexity">
-      Time Complexity: O(n²) (Worst & Average), O(n) (Best - already sorted)
-    </p>
+    <p class="complexity">Time Complexity:</p>
+    <p class="complexity">O(n²) (Worst & Average)</p>
+    <p class="complexity">O(n) (Best - already sorted)</p>
     <pre><code class="language-python">
 def ins_sort(lst):
     for i in range(1, len(lst)):
@@ -112,9 +113,9 @@ def ins_sort(lst):
       Bubble sort repeatedly swaps adjacent elements if they are in the wrong
       order.
     </p>
-    <p class="complexity">
-      Time Complexity: O(n²) (Worst & Average), O(n) (Best - already sorted)
-    </p>
+    <p class="complexity">Time Complexity:</p>
+    <p class="complexity">O(n²) (Worst & Average)</p>
+    <p class="complexity">O(n) (Best - already sorted)</p>
     <pre><code class="language-python">
 def bub_sort(lst):
     ub = len(lst)
@@ -178,9 +179,8 @@ class Queue:
       A linked list consists of nodes where each node contains data and a
       reference to the next node.
     </p>
-    <p class="complexity">
-      Insertion & Deletion: O(1) at head, O(n) for search
-    </p>
+    <p class="complexity">Insertion & Deletion: O(1) at head</p>
+    <p class="complexity">O(n) for search</p>
     <pre><code class="language-python">
 class Node:
     def __init__(self, data):
@@ -209,9 +209,8 @@ class LinkedList:
       A binary tree consists of nodes where each node has at most two children
       (left and right).
     </p>
-    <p class="complexity">
-      Insertion & Search: O(log n) (Balanced), O(n) (Unbalanced)
-    </p>
+    <p class="complexity">Insertion & Search: O(log n) (Balanced)</p>
+    <p class="complexity">O(n) (Unbalanced)</p>
     <pre><code class="language-python">
 class TreeNode:
     def __init__(self, value):
